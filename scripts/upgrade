@@ -1,15 +1,15 @@
 #!/bin/bash
 
-source _common.sh
+
 source /usr/share/yunohost/helpers
 
 #=================================================
 # INSTALL NODEJS
 #=================================================
-ynh_script_progression --message="Install nodejs..."
+#REMOVEME? ynh_script_progression --message="Install nodejs..."
 
-ynh_install_nodejs --nodejs_version=$nodejs_version
-ynh_use_nodejs
+#REMOVEME? ynh_install_nodejs --#REMOVEME? nodejs_version=$nodejs_version
+#REMOVEME? ynh_use_nodejs
 
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
