@@ -1,16 +1,8 @@
 #!/bin/bash
 
-source _common.sh
 source /usr/share/yunohost/helpers
 
 ynh_app_setting_set --key=php_upload_max_filesize --value=500M
-
-#=================================================
-# INSTALL NODEJS
-#=================================================
-ynh_script_progression "Install nodejs..."
-
-ynh_nodejs_install
 
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
@@ -21,8 +13,8 @@ tmpdir=$(mktemp -d)
 
 ynh_setup_source --dest_dir="$tmpdir"
 pushd $tmpdir
-    npm ci
-    npm run build
+    ynh_hide_warnings ynh_exec_as_app npm ci
+    ynh_hide_warnings ynh_exec_as_app npm run build
     mv build/_h5ai $install_dir/_h5ai
 popd
 
