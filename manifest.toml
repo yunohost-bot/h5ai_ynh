@@ -1,4 +1,5 @@
-@ -1,65 +0,0 @@
+#:schema https://raw.githubusercontent.com/YunoHost/apps/master/schemas/manifest.v2.schema.json
+
 packaging_format = 2
 
 id = "h5ai"
@@ -64,3 +65,4 @@ ram.runtime = "50M"
 
     [resources.nodejs]
     version = "10.15"
+    
