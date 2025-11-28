@@ -62,4 +62,4 @@ ram.runtime = "50M"
     packages = "php8.2-fpm, php8.2-gd, ffmpeg, imagemagick"
 
     [resources.nodejs]
-    version = "10"
+    version = "10.15"
