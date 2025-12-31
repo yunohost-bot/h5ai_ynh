@@ -19,7 +19,7 @@ admindoc = "https://larsjung.de/h5ai/"
 code = "https://github.com/lrsjng/h5ai"
 
 [integration]
-yunohost = ">= 11.2"
+yunohost = ">= 12.1.38"
 architectures = "all"
 multi_instance = true
 ldap = false
